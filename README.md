@@ -18,6 +18,16 @@ To undesrtand the code of each widget or just simply Ctrl+c and Ctrl+v to use it
 9. Date Picker
 10. Time Picker
 
+
+### Dependencies :-
+Only required gradle dependency is -
+```
+implementation 'com.google.android.material:material:1.0.0' 
+```
+
+Add it in app level gradle file.
+
+
 ## Description :-
 
 ### 1. Toggle Button Usage 
@@ -316,6 +326,13 @@ private String getCurrentDate() {
     }
     
 ```
+
+
+## Bugs and Improvements :-
+No bugs.
+
+
+# Dev :- Prakash Gupta
 
 
         
