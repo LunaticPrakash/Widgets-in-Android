@@ -43,7 +43,7 @@
         android:onClick="onClickDisplayDate"
         android:layout_below="@+id/dateDisplayTextView"
         android:layout_marginStart="130dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         />
 
     //Floating Button
