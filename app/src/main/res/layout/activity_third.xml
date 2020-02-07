@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+    android:id="@+id/thirdActivityText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="80dp"
+    android:textSize="30sp"
+    android:text="@string/third_activity"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    //Date Picker
+
+    <TextView
+        android:id="@+id/dateDisplayTextView"
+        android:layout_below="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_height="wrap_content"
+        />
+
+
+    <DatePicker
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/thirdActivityText"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/display_date"
+        android:onClick="onClickDisplayDate"
+        android:layout_below="@+id/dateDisplayTextView"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="50dp"
+        />
+
+    //Floating Button
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="520dp"
+        android:clickable="true"
+        android:onClick="onClickFloatButton3"
+        android:src="@drawable/ic_stat_name"
+        android:focusable="true" />
+
+
+</RelativeLayout>

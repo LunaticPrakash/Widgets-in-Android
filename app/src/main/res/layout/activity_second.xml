@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    tools:ignore="ExtraText">
+
+
+
+    <TextView
+        android:id="@+id/secondActivityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:textSize="30sp"
+        android:text="@string/second_activity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+
+    // Alert Dialog
+
+    <TextView
+        android:id="@+id/labelAlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alert_dialog"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/secondActivityText"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:onClick="showAlertDialog"
+        android:layout_alignBaseline="@+id/labelAlertDialog"
+        android:layout_marginStart="220dp"/>
+
+    //Spinner
+
+
+    <TextView
+        android:id="@+id/labelSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spinner"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/labelAlertDialog"
+        android:layout_marginTop="40dp"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:entries="@array/cars"
+        />
+
+    <TextView
+        android:id="@+id/statusSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="220dp"
+        android:text="@string/statusSpinner"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <Button
+        android:id="@+id/spinnerSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:onClick="spinnerOnClick"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="220dp"/>
+
+
+
+    //SeekBar
+
+    <TextView
+        android:id="@+id/labelSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/seek_bar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/spinnerSubmitButton"
+        android:layout_marginTop="30dp"/>
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:id="@+id/seekBar"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/labelSeekBar"/>
+
+
+    <TextView
+        android:id="@+id/statusSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/labelSeekBar"
+        android:layout_marginStart="220dp"
+        android:text="@string/status"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    //Floating Button
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="520dp"
+        android:clickable="true"
+        android:src="@drawable/ic_stat_name"
+        android:focusable="true" />
+
+
+</RelativeLayout>

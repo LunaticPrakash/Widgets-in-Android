@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+
+
+    <TextView
+        android:id="@+id/widgets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:textSize="30sp"
+        android:text="@string/widgets"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+
+    //Toggle Button
+
+    <TextView
+            android:id="@+id/labelToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toggle_button"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:layout_below="@+id/widgets"
+            android:layout_marginTop="30dp"/>
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_below="@+id/labelToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="@string/off"
+        android:textOn="@string/onn"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/statusToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status"
+        android:layout_alignBaseline="@+id/toggleButton"
+        android:layout_marginStart="220dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+
+    //CheckBox
+
+
+    <TextView
+        android:id="@+id/labelCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/toggleButton"
+        android:layout_marginTop="30dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_below="@+id/labelCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/checkbox_1"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_below="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/checkbox_2"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:onClick="checkBoxClick"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="150dp"/>
+
+
+
+    <TextView
+        android:id="@+id/statusCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status"
+        android:layout_alignBaseline="@+id/checkBox1"
+        android:layout_marginStart="220dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+
+    //Radio Button
+
+
+    <TextView
+        android:id="@+id/labelRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radio_button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/checkBox2"
+        android:layout_marginTop="30dp"/>
+
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelRadioButton">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_button_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_button_2" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/statusRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="220dp"
+        android:text="@string/status"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+    //Rating Bar
+
+    <TextView
+        android:id="@+id/labelRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rating_bar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/rg1"
+        android:layout_marginTop="30dp"/>
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelRatingBar"/>
+
+    <TextView
+        android:id="@+id/statusRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status"
+        android:layout_marginTop="560dp"
+        android:layout_marginStart="220dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:onClick="ratingBarClick"
+        android:layout_marginTop="540dp"
+        android:layout_marginStart="100dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:layout_marginStart="280dp"
+        android:onClick="onClickFloatButton1"
+        android:clickable="true"
+        android:src="@drawable/ic_stat_name"
+        android:focusable="true" />
+
+
+
+
+</RelativeLayout>
