@@ -3,7 +3,7 @@ This repo contains implementation of all widgets in Android with clean and modul
 
 ## Purpose :- 
 
-To undesrtand the code of each widget or just simply Ctrl+c and Ctrl+v to use it in your project.
+To understand the code of each widget or just simply Ctrl+c and Ctrl+v to use it in your project.
 
 ## Widgets available :-
 
